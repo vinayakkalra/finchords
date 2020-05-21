@@ -1,36 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-    font-family: Oswald-b;
-    src: url(../fonts/Oswald-Bold.ttf);
+    font-family: montserrat-b;
+    src: url(../fonts/Montserrat-Bold.ttf);
     font-display: swap;
 }
-.font-Oswald-b {
-    font-family: Oswald-b;
+.font-montserrat-b {
+    font-family: montserrat-b;
 }
 @font-face {
-    font-family: Oswald-m;
-    src: url(../fonts/Oswald-Medium.ttf);
+    font-family: montserrat-m;
+    src: url(../fonts/Montserrat-Medium.otf);
     font-display: swap;
 }
-.font-Oswald-m {
-    font-family: Oswald-m;
+.font-montserrat-m {
+    font-family: montserrat-m;
 }
 @font-face {
-    font-family: Oswald-r;
-    src: url(../fonts/Oswald-Regular.ttf);
+    font-family: montserrat-r;
+    src: url(../fonts/Montserrat-Regular.ttf);
     font-display: swap;
 }
-.font-Oswald-r {
-    font-family: Oswald-r;
-}
-@font-face {
-    font-family: Oswald-l;
-    src: url(../fonts/Oswald-Light.ttf);
-    font-display: swap;
-}
-.font-Oswald-l {
-    font-family: Oswald-l;
+.font-montserrat-r {
+    font-family: montserrat-r;
 }
 @font-face {
     font-family: roboto-b;
@@ -56,29 +48,16 @@
 .font-roboto-r {
     font-family:roboto-r;
 }
-@font-face {
-    font-family: merriweather-b;
-    src: url(../fonts/Merriweather-Bold.ttf);
-    font-display: swap;
+@font-face{
+    font-family: roboto-l;
+    src: url(../fonts/Roboto-Light.ttf);
+    font-display:swap;
 }
-.font-merriweather-b {
-    font-family:merriweather-b;
+.font-roboto-l{
+    font-family: roboto-l;
 }
-@font-face {
-    font-family: merriweather-r;
-    src: url(../fonts/Merriweather-Regular.ttf);
-    font-display: swap;
-}
-.font-merriweather-r {
-    font-family:merriweather-r;
-}
-@font-face {
-    font-family: merriweather-l;
-    src: url(../fonts/Merriweather-Light.ttf);
-    font-display: swap;
-}
-.font-merriweather-l {
-    font-family:merriweather-l;
+.color-white{
+    color: #FFF;
 }
 /* drawer */
 #drawer{

@@ -33,7 +33,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                         $(".applied").css('display', 'none');
                         $(".strike").css('display', 'none');
                         document.getElementById('price').innerHTML = "&#8377;1,997";
-                        $("#price").css('color', '#000');
+                        $("#price").css('color', '#fff');
                     }
                 }
             });
@@ -67,7 +67,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 $(".applied").css('display', 'none');
                                 $(".strike").css('display', 'none');
                                 document.getElementById('price').innerHTML = "&#8377;1,997";
-                                $("#price").css('color', '#000');
+                                $("#price").css('color', '#fff');
                             }
                         }
                     });
@@ -82,11 +82,11 @@ var referral_id = sessionStorage.getItem('referral_id');
 
                 $(".coupon-code-applied-cross").on("click", function (e) {
                     e.preventDefault();
-                    document.getElementById('err').innerHTML = "Apply Coupon";
+                    document.getElementById('err').innerHTML = "Apply";
                     $(".applied").css('display', 'none');
                     $(".strike").css('display', 'none');
                     document.getElementById('price').innerHTML = "&#8377;1,997";
-                    $("#price").css('color', '#000');
+                    $("#price").css('color', '#fff');
                     $("#err").removeClass("disabled");
                     result.value = 1997;
                     result.discount = 0;
@@ -368,7 +368,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                         $(".applied-mobile").css('display', 'none');
                         $(".strike-mobile").css('display', 'none');
                         document.getElementById('price-mobile').innerHTML = "&#8377;1,997";
-                        $("#price-mobile").css('color', '#000');
+                        $("#price-mobile").css('color', '#fff');
                     }
                 }
             });
@@ -403,7 +403,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                                 $(".applied-mobile").css('display', 'none');
                                 $(".strike-mobile").css('display', 'none');
                                 document.getElementById('price-mobile').innerHTML = "&#8377;1,997";
-                                $("#price-mobile").css('color', '#000');
+                                $("#price-mobile").css('color', '#fff');
                             }
                         }
                     });
@@ -417,7 +417,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                     $(".applied-mobile").css('display', 'none');
                     $(".strike-mobile").css('display', 'none');
                     document.getElementById('price-mobile').innerHTML = "&#8377;1,997";
-                    $("#price-mobile").css('color', '#000');
+                    $("#price-mobile").css('color', '#fff');
                     $("#err-mobile").removeClass("disabled");
                     result.value = 1997;
                     result.discount = 0;
