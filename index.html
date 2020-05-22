@@ -69,6 +69,23 @@
             visibility: visible;
             opacity: 1;
         }
+        input[type=range]::-webkit-slider-runnable-track {
+        background: #fff;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color:#FF4747;
+            margin-top:-9px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }​
+        input[type="range"]::-webkit-slider-thumb:active {
+            transform: scale(0.5);
+        }
     </style>
 </head>
 
@@ -165,7 +182,7 @@
                         <img src="images/guitar.png" style="width: 100%;padding:20px 5px;">
                         <div class="d-flex justify-content-center">
                             <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
-                                <span class="font-montserrat-b" id="price" style="color:#fff;font-size:40px;">&#8377; 00.0 </span> 
+                                <span class="font-montserrat-b price" style="color:#fff;font-size:40px;">&#8377; 00.0 </span> 
                                 <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><strike class="strike"><b>&#8377; 12,800</b></strike> 97% off </span>
                             </p>
                         </div>
@@ -191,15 +208,6 @@
                                 <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Access on mobile and TV </li>
                                 <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Certificate of Completion</li>
                             </ul>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable"  style="padding:15px;background:#FF4747 0% 0% no-repeat padding-box;border-radius:10px;">
-                                <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
-                                <div class="couponDiv" style="display:flex;font-size:15px;">
-                                    <input type="text" name="coupon" id="in" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #FF4747;text-align:center;margin-right:10px;">
-                                    <a onclick="validate()" id="err" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#FF4747;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
-                                </div>
-                            </div>
                         </div>
                         <hr style="border:1px solid #FF4747;">
                         <div class="d-flex justify-content-center p-4">
@@ -230,7 +238,7 @@
                                 <img src="images/previous-track-button.png">
                             </div>
                             <div class="col-8 p-1">
-                                <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+                                <input type="range" class="custom-range" min="0" max="6" step="2" id="customRange3">
                             </div>
                             <div class="col-1 p-0 text-center">
                                 <img style="transform:rotate(180deg);" src="images/previous-track-button.png">
@@ -321,7 +329,7 @@
                         <div class="tip col-10" style="float:left;width:700px;background-color:#434D6E;box-shadow:0px 10px 6px #00000029;border-radius:10px;top:-122px;">
                             <div class="d-flex justify-content-center pt-5">
                                 <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
-                                    <span class="font-montserrat-b" id="price" style="color:#fff;font-size:40px;">&#8377; 00.0 </span> 
+                                    <span class="font-montserrat-b price" style="color:#fff;font-size:40px;">&#8377; 00.0 </span> 
                                     <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><strike class="strike"><b>&#8377; 12,800</b></strike> 97% off </span>
                                 </p>
                             </div>
@@ -347,15 +355,6 @@
                                     <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Access on mobile and TV </li>
                                     <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Certificate of Completion</li>
                                 </ul>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable"  style="padding:15px;background:#FF4747 0% 0% no-repeat padding-box;border-radius:10px;">
-                                    <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
-                                    <div class="couponDiv" style="display:flex;font-size:15px;">
-                                        <input type="text" name="coupon" id="in" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #FF4747;text-align:center;margin-right:10px;">
-                                        <a onclick="validate()" id="err" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#FF4747;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
-                                    </div>
-                                </div>
                             </div>
                             <hr style="border:1px solid #FF4747;">
                             <div class="d-flex justify-content-center p-4">
@@ -456,7 +455,7 @@
                         <div class="tip col-10" style="float:left;width:700px;background-color:#434D6E;box-shadow:0px 10px 6px #00000029;border-radius:10px;top:-290px;">
                             <div class="d-flex justify-content-center pt-5">
                                 <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
-                                    <span class="font-montserrat-b" id="price" style="color:#fff;font-size:40px;">&#x20B9; 00.0 </span> 
+                                    <span class="font-montserrat-b price" style="color:#fff;font-size:40px;">&#x20B9; 00.0 </span> 
                                     <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><strike class="strike"><b>&#x20B9; 12,800</b></strike> 97% off </span>
                                 </p>
                             </div>
@@ -483,15 +482,6 @@
                                     <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Certificate of Completion</li>
                                 </ul>
                             </div>
-                            <div class="d-flex justify-content-center">
-                                <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" style="padding:15px;background:#FF4747 0% 0% no-repeat padding-box;border-radius:10px;">
-                                    <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
-                                    <div class="couponDiv" style="display:flex;font-size:15px;">
-                                        <input type="text" name="coupon" id="in" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #FF4747;text-align:center;margin-right:10px;">
-                                        <a onclick="validate()" id="err" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#FF4747;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
-                                    </div>
-                                </div>
-                            </div>
                             <hr style="border:1px solid #FF4747;">
                             <div class="d-flex justify-content-center p-4">
                                 <div>
@@ -516,7 +506,7 @@
                         <div class="tip col-10" style="float:left;width:700px;background-color:#434D6E;box-shadow:0px 10px 6px #00000029;border-radius:10px;top:-32px;margin-right:60px;">
                             <div class="d-flex justify-content-center pt-5">
                                 <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
-                                    <span class="font-montserrat-b" id="price" style="color:#fff;font-size:40px;">&#8377; 00.0 </span> 
+                                    <span class="font-montserrat-b price" style="color:#fff;font-size:40px;">&#8377; 00.0 </span> 
                                     <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><strike class="strike"><b>&#8377; 12,800</b></strike> 97% off </span>
                                 </p>
                             </div>
@@ -542,15 +532,6 @@
                                     <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Access on mobile and TV </li>
                                     <li><div class="" style="width:28px;border-radius:15px;height:28px;background-color:#6FB2FF;float:left;margin-right:10px;"></div> Certificate of Completion</li>
                                 </ul>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable"  style="padding:15px;background:#FF4747 0% 0% no-repeat padding-box;border-radius:10px;">
-                                    <p class="font-roboto-l" style="font-size:20px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
-                                    <div class="couponDiv" style="display:flex;font-size:15px;">
-                                        <input type="text" name="coupon" id="in" class="coupon font-roboto-r" title="Enter coupon" style="border-radius:5px;border:2px solid #FF4747;text-align:center;margin-right:10px;">
-                                        <a onclick="validate()" id="err" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#FF4747;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:15px;text-align:center;cursor:pointer;">Apply</a>
-                                    </div>
-                                </div>
                             </div>
                             <hr style="border:1px solid #FF4747;">
                             <div class="d-flex justify-content-center p-4">
@@ -655,7 +636,7 @@
                         </div>
                         <div class="d-flex justify-content-center">
                             <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
-                                <span class="font-montserrat-b" id="price" style="color:#fff;font-size:40px;">₹ 00.0 </span> 
+                                <span class="font-montserrat-b price-mobile" style="color:#fff;font-size:40px;">₹ 00.0 </span> 
                                 <span class="font-roboto-m" style="color:#C5C5C5;font-size:20px;"><strike class="strike"><b>₹ 12,800</b></strike> 97% off </span>
                             </p>
                         </div>
@@ -727,7 +708,7 @@
                         </div>
                         <div class="d-flex justify-content-center">
                             <p style="font-size:25px;padding-top:5px;margin-bottom:0px;">
-                                <span class="font-montserrat-b" id="price" style="color:#fff;font-size:25px;">₹ 00.0 </span> 
+                                <span class="font-montserrat-b price-mobile" style="color:#fff;font-size:25px;">₹ 00.0 </span> 
                                 <span class="font-roboto-m" style="color:#C5C5C5;font-size:15px;"><strike class="strike"><b>₹ 12,800</b></strike> 97% off </span>
                             </p>
                         </div>
@@ -742,15 +723,6 @@
                                 </a>
                             </div>
                         </div>  
-                        <div class="d-flex justify-content-center mt-4">
-                            <div class="de elBTN elAlign_center elMargin0 ui-droppable de-editable" style="padding:15px;background:#FF4747 0% 0% no-repeat padding-box;border-radius:10px;">
-                                <p class="font-roboto-l" style="font-size:15px;color:#fff;margin-bottom:0px;text-align:left;">Have a Coupon Code?</p> 
-                                <div class="couponDiv" style="display:flex;font-size:15px;">
-                                    <input type="text" name="coupon" id="in" class="coupon font-roboto-r" title="Enter coupon" style="font-size:13px;border-radius:5px;border:2px solid #FF4747;text-align:center;margin-right:10px;">
-                                    <a onclick="validate()" id="err" class="font-roboto-r btn-green btn-block caps" style="padding:10px;background-color:#FF4747;border:2px solid #FFFFFF;border-radius:5px;color:#fff;font-size:13px;text-align:center;cursor:pointer;">Apply</a>
-                                </div>
-                            </div>
-                        </div>
                         <hr style="border:1px solid #FF4747;">
                         <div class="d-flex justify-content-center p-2">
                             <div>
@@ -964,7 +936,7 @@
         </div>
         <!--  -->
         <div class="container-fluid" style="background-color:#2F3549;margin-top:-1px;">
-            <div class="container">
+            <div class="container pb-4">
                 <div class="pb-1" style="box-shadow: 0px 10px 6px #00000029;background-image: url(images/table-music-power-sound-63703.png);background-size:cover;border-radius:10px;padding: 0 15px;">
                     <p class="font-montserrat-m m-0 text-uppercase" style="padding: 25px 0;color:#fff;text-align:center;font-size: 14px;">why learn from Shubham semwal?</p>
                     <div class="color-white" style="box-shadow:0px 6px 6px #00000029;border-radius:127px;padding:10px;text-align:justify;">
@@ -1044,93 +1016,76 @@
 
     });
 
-    // // The data/time we want to countdown to
-    // var countDownDate = new Date("may 14, 2020 24:00:00").getTime();
+    if (window.innerWidth >= 960) {
 
-    // // Run myfunc every second
-    // var myfunc = setInterval(function() {
+        var result = "";
+        $.ajax({
+            type: "POST",
+            url: "php/process.php",
+            'async': false,
+            dataType: "json",
+            data: {
+                type: "default"
+            },
+            success: function (dataResult) {
+                if (dataResult.statusCode == 200) {
+                    result = dataResult;
+                    $('.price').html(result.value);
+                    $(".applied").css('display', 'block');
+                    $(".strike").css('display', 'contents');
+                    $(".price").css('color', '#2fbe6d');
+                    $('#code').html(result.coupon_code);
+                    $('.modaltotal').html(result.value);
+                    $('#discount').html(result.discount);
+                    return true;
+                }
+                else if (dataResult.statusCode == 201) {
+                    result = dataResult;
+                    $('.modaltotal').html(result.value);
+                    $('#discount').html(result.discount);
+                    $(".applied").css('display', 'none');
+                    $(".strike").css('display', 'none');
+                    document.getElementById('price').innerHTML = "&#8377;1,997";
+                    $(".price").css('color', '#fff');
+                }
+            }
+        });
 
-    // var now = new Date().getTime();
-    // var timeleft = countDownDate - now;
-        
-    // // Calculating the days, hours, minutes and seconds left
-    // var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    // var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    // var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    // var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-        
-    // // Result is output to the specific element
-    // document.getElementsByClassName("days")[0].innerHTML = days 
-    // document.getElementsByClassName("hours")[0].innerHTML = hours 
-    // document.getElementsByClassName("mins")[0].innerHTML = minutes 
-    // document.getElementsByClassName("secs")[0].innerHTML = seconds  
-        
-    // // timer2
-    // document.getElementsByClassName("days1")[0].innerHTML = days 
-    // document.getElementsByClassName("hours1")[0].innerHTML = hours 
-    // document.getElementsByClassName("mins1")[0].innerHTML = minutes 
-    // document.getElementsByClassName("secs1")[0].innerHTML = seconds  
+    } else {
 
-    // // timer3
-    // document.getElementsByClassName("days2")[0].innerHTML = days 
-    // document.getElementsByClassName("hours2")[0].innerHTML = hours 
-    // document.getElementsByClassName("mins2")[0].innerHTML = minutes 
-    // document.getElementsByClassName("secs2")[0].innerHTML = seconds  
-
-    // // timer4
-    // document.getElementsByClassName("days3")[0].innerHTML = days 
-    // document.getElementsByClassName("hours3")[0].innerHTML = hours 
-    // document.getElementsByClassName("mins3")[0].innerHTML = minutes 
-    // document.getElementsByClassName("secs3")[0].innerHTML = seconds  
-        
-    // // timer5
-    // document.getElementsByClassName("days4")[0].innerHTML = days 
-    // document.getElementsByClassName("hours4")[0].innerHTML = hours 
-    // document.getElementsByClassName("mins4")[0].innerHTML = minutes 
-    // document.getElementsByClassName("secs4")[0].innerHTML = seconds  
-
-    // // timer6
-    // document.getElementsByClassName("days5")[0].innerHTML = days 
-    // document.getElementsByClassName("hours5")[0].innerHTML = hours 
-    // document.getElementsByClassName("mins5")[0].innerHTML = minutes 
-    // document.getElementsByClassName("secs5")[0].innerHTML = seconds  
-    
-    // // Display the message when countdown is over
-    // if (timeleft < 0) {
-    //     clearInterval(myfunc);
-    //     document.getElementsByClassName("days")[0].innerHTML = "00"
-    //     document.getElementsByClassName("hours")[0].innerHTML = "00" 
-    //     document.getElementsByClassName("mins")[0].innerHTML = "00"
-    //     document.getElementsByClassName("secs")[0].innerHTML = "00"
-    //     document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-    //     document.getElementsByClassName("days1")[0].innerHTML = "00"
-    //     document.getElementsByClassName("hours1")[0].innerHTML = "00" 
-    //     document.getElementsByClassName("mins1")[0].innerHTML = "00"
-    //     document.getElementsByClassName("secs1")[0].innerHTML = "00"
-    //     document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-    //     document.getElementsByClassName("days2")[0].innerHTML = "00"
-    //     document.getElementsByClassName("hours2")[0].innerHTML = "00" 
-    //     document.getElementsByClassName("mins2")[0].innerHTML = "00"
-    //     document.getElementsByClassName("secs2")[0].innerHTML = "00"
-    //     document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-    //     document.getElementsByClassName("days3")[0].innerHTML = "00"
-    //     document.getElementsByClassName("hours3")[0].innerHTML = "00" 
-    //     document.getElementsByClassName("mins3")[0].innerHTML = "00"
-    //     document.getElementsByClassName("secs3")[0].innerHTML = "00"
-    //     document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-    //     document.getElementsByClassName("days4")[0].innerHTML = "00"
-    //     document.getElementsByClassName("hours4")[0].innerHTML = "00" 
-    //     document.getElementsByClassName("mins4")[0].innerHTML = "00"
-    //     document.getElementsByClassName("secs4")[0].innerHTML = "00"
-    //     document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-    //     document.getElementsByClassName("days5")[0].innerHTML = "00"
-    //     document.getElementsByClassName("hours5")[0].innerHTML = "00" 
-    //     document.getElementsByClassName("mins5")[0].innerHTML = "00"
-    //     document.getElementsByClassName("secs5")[0].innerHTML = "00"
-    //     document.getElementsByClassName("end").innerHTML = "TIME UP!!";
-    //     }
-    // }, 1000);
-
+        var result = "";
+        $.ajax({
+            type: "POST",
+            url: "php/process.php",
+            'async': false,
+            dataType: "json",
+            data: {
+                type: "default"
+            },
+            success: function (dataResult) {
+                if (dataResult.statusCode == 200) {
+                    result = dataResult;
+                    $('.price-mobile').html(result.value);
+                    $(".applied-mobile").css('display', 'block');
+                    $(".strike-mobile").css('display', 'contents');
+                    $(".price-mobile").css('color', '#2fbe6d');
+                    $('#code-mobile').html(result.coupon_code);
+                    $('.modaltotal').html(result.value);
+                    $('#discount').html(result.discount);
+                    return true;
+                }
+                else if (dataResult.statusCode == 201) {
+                    result = dataResult;
+                    $('.modaltotal').html(result.value);
+                    $('#discount').html(result.discount);
+                    $(".applied-mobile").css('display', 'none');
+                    $(".strike-mobile").css('display', 'none');
+                    document.getElementById('price-mobile').innerHTML = "&#8377;1,997";
+                    $(".price-mobile").css('color', '#fff');
+                }
+            }
+        });
+    }
 
     //get parameters from url
     var getParams = function (url) {
@@ -1213,115 +1168,6 @@
             }
         });
     }
-    
-    // sidenav show hide js
-    $(document).ready(function(){
-
-        $('.st-toggle').click(function(){
-            if ($('.st-total').css('visibility') == 'hidden'){
-                $('.st-total').css('visibility','visible');
-                $('.st-btn').css('visibility','visible');
-                $('.st-left').css('display' ,'inline-block');
-                $('.st-right').css('display' ,'none');
-            }else{
-                $('.st-total').css('visibility','hidden'); 
-                $('.st-btn').css('visibility','hidden');
-                $('.st-right').css('display' ,'inline-block');
-                $('#st-2.st-left .st-toggle .st-left').css('display' ,'none');
-            }
-                       
-        });       
-    });
-    // youtube video load js
-    ( function() {
-
-        var youtube = document.querySelectorAll( ".youtube" );
-
-        for (var i = 0; i < youtube.length; i++) {
-
-            var source = "images/video.jpg";
-
-            var image = new Image();
-            image.src = source;
-            image.addEventListener( "load", function() {
-            youtube[ i ].appendChild( image );
-
-            }( i ) );
-
-            youtube[i].addEventListener( "click", function() {
-                var iframe = document.createElement( "iframe" );
-                iframe.setAttribute( "frameborder", "0" );
-                iframe.setAttribute( "allowfullscreen", "" );
-                iframe.setAttribute( "style", "height:400px;width:700px;" );
-                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-
-                this.innerHTML = "";
-                this.appendChild( iframe );
-            } );    
-        };
-
-    })();
-    // function 2 for 3 video in row
-    ( function() {
-
-        var youtube = document.querySelectorAll( ".youtube1" );
-
-        for (var i = 0; i < youtube.length; i++) {
-
-            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
-
-            var image = new Image();
-            image.src = source;
-            image.setAttribute( "style", "height:240px;width:300px;" );
-            image.addEventListener( "load", function() {
-            youtube[ i ].appendChild( image );
-
-            }( i ) );
-
-            youtube[i].addEventListener( "click", function() {
-                var iframe = document.createElement( "iframe" );
-                iframe.setAttribute( "frameborder", "0" );
-                iframe.setAttribute( "allowfullscreen", "" );
-                iframe.setAttribute( "style", "height:240px;width:300px;" );
-                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-
-                this.innerHTML = "";
-                this.appendChild( iframe );
-            } );    
-        };
-
-    })();
-    // video load code js for mobile
-    ( function() {
-
-        var youtube = document.querySelectorAll( ".youtube2" );
-
-        for (var i = 0; i < youtube.length; i++) {
-
-            var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
-
-            var image = new Image();
-            image.src = source;
-            image.setAttribute( "style", "height:450px;width:740px;" );
-            image.addEventListener( "load", function() {
-            youtube[ i ].appendChild( image );
-
-            }( i ) );
-
-            youtube[i].addEventListener( "click", function() {
-                var iframe = document.createElement( "iframe" );
-                iframe.setAttribute( "frameborder", "0" );
-                iframe.setAttribute( "allowfullscreen", "" );
-                iframe.setAttribute( "style", "height:450px;width:740px;" );
-                iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
-
-                this.innerHTML = "";
-                this.appendChild( iframe );
-            } );    
-        };
-
-    })();
-    
     
     </script>
 </body>
