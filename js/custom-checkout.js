@@ -17,7 +17,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                 success: function (dataResult) {
                     if (dataResult.statusCode == 200) {
                         result = dataResult;
-                        $('#price').html(result.value);
+                        $('#price').html('&#8377; ' + result.value);
                         $(".applied").css('display', 'block');
                         $(".strike").css('display', 'contents');
                         $("#price").css('color', '#2fbe6d');
@@ -52,7 +52,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                         success: function (dataResult) {
                             if (dataResult.statusCode == 200) {
                                 result = dataResult;
-                                $('#price').html(result.value);
+                                $('#price').html('&#8377; ' + result.value);
                                 $(".applied").css('display', 'block');
                                 $(".strike").css('display', 'contents');
                                 $("#price").css('color', '#2fbe6d');
@@ -352,7 +352,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                 success: function (dataResult) {
                     if (dataResult.statusCode == 200) {
                         result = dataResult;
-                        $('#price-mobile').html(result.value);
+                        $('#price-mobile').html('&#8377; ' + result.value);
                         $(".applied-mobile").css('display', 'block');
                         $(".strike-mobile").css('display', 'contents');
                         $("#price-mobile").css('color', '#2fbe6d');
@@ -388,7 +388,7 @@ var referral_id = sessionStorage.getItem('referral_id');
                         success: function (dataResult) {
                             if (dataResult.statusCode == 200) {
                                 result = dataResult;
-                                $('#price-mobile').html(result.value);
+                                $('#price-mobile').html('&#8377; ' + result.value);
                                 $(".applied-mobile").css('display', 'block');
                                 $(".strike-mobile").css('display', 'contents');
                                 $("#price-mobile").css('color', '#2fbe6d');
