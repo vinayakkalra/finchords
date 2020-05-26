@@ -89,7 +89,7 @@
     
 </head>
 
-<body style="background-color: #eeeeee;">
+<body>
     
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP"
@@ -99,11 +99,11 @@
 
     <div class="d-none d-lg-block">
         <!-- Navigation -->
-        <div class="fixed-top" style="padding:20px 0px;background-color:#00abc9;outline:none;">
+        <div style="padding:20px 0px;outline:none;background-color:#17191f;">
             <nav class="navbar navbar-expand-lg navbar-dark static-top">
                 <div class="container">
                     <a class="navbar-brand" href="/">
-                        <img src="images/logo.png" alt="" width="133" height="50">
+                        <img src="images/Finstreet logo@2x.png" alt="" width="100" height="44">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,106 +122,17 @@
         </div>
 
         <!-- page content -->
-        <div class="container-fluid" style="margin-top: 150px;">
+        <div class="container-fluid" style="background-color:#242838;">
+            <div class="container color-white" style="background-color:#2F3549;padding:20px 0px;"> 
             <h2 class="pl-3">Hello <span id="name-desktop"></span></h2>
-            <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-4">
-                    <p class="text-muted m-0 text-center mb-3">Click the button below to transfer money to your account</p>
-                    <button type="button" class="btn btn-primary w-100 font-weight-bold" style="font-size: 20px;" data-toggle="modal" data-target="#exampleModal">Redeem Now</button>
-                </div>
-            </div>
-            <div class="row p-2 mt-4">
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-center align-items-center">
-                                    <div class="w-100">
-                                        <p class="text-muted m-0">Total Income</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="total-income-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-4">
+                        <p class="text-muted m-0 text-center mb-3">Click the button below to transfer money to your account</p>
+                        <button type="button" class="btn btn-primary w-100 font-weight-bold" style="font-size: 20px;" data-toggle="modal" data-target="#exampleModal">Redeem Now</button>
                     </div>
                 </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-center align-items-center">
-                                    <div class="w-100">
-                                        <p class="text-muted m-0">Total Redeemed</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="total-red-amount-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-hand-pointer-o text-blue" style="font-size: 50px;"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-center align-items-center">
-                                    <div class="w-100">
-                                        <p class="text-muted m-0">Total clicks</p>
-                                        <h3 class="m-0" id="total-clicks-desktop">0</h3>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <i class="fa fa-vcard-o text-blue" style="font-size: 50px;"></i>
-                                </div>
-                                <div class="col-8 d-flex justify-content-center align-items-center">
-                                    <div class="w-100">
-                                        <p class="text-muted m-0">Visitors</p>
-                                        <h3 class="m-0" id="unique-visitors-desktop">0</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-            <!-- content 1 -->
-            <div class="container">
-                <div class="row p-2">
-                    <div class="col-4 p-3">
-                        <div class="bg-white w-100 p-2">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-4 d-flex justify-content-center align-items-center">
-                                        <i class="fa fa-stack-overflow text-blue" style="font-size: 50px;"></i>
-                                    </div>
-                                    <div class="col-8 d-flex justify-content-center align-items-center">
-                                        <div class="w-100">
-                                            <p class="text-muted m-0">Total Payments</p>
-                                            <h3 class="m-0" id="total-payments-desktop">0</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 p-3">
+                <div class="row p-2 mt-4">
+                    <div class="col-3 p-3">
                         <div class="bg-white w-100 p-2">
                             <div class="container">
                                 <div class="row">
@@ -230,25 +141,116 @@
                                     </div>
                                     <div class="col-8 d-flex justify-content-center align-items-center">
                                         <div class="w-100">
-                                            <p class="text-muted m-0">Redeemable Amount</p>
-                                            <h3 class="m-0"><span>&#8377; </span><span class="redeemable-amount"> 0</span></h3>
+                                            <p class="text-muted m-0">Total Income</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="total-income-desktop">0</span></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 p-3">
+                    <div class="col-3 p-3">
                         <div class="bg-white w-100 p-2">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-4 d-flex justify-content-center align-items-center">
-                                        <img src="icons/medal.svg" style="font-size:50px;width:50px;height:50px;">
+                                        <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
                                     </div>
                                     <div class="col-8 d-flex justify-content-center align-items-center">
                                         <div class="w-100">
-                                            <p class="text-muted m-0">Level</p>
-                                            <h3 class="m-0 level">1</h3>
+                                            <p class="text-muted m-0">Total Redeemed</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="total-red-amount-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-hand-pointer-o text-blue" style="font-size: 50px;"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-center align-items-center">
+                                        <div class="w-100">
+                                            <p class="text-muted m-0">Total clicks</p>
+                                            <h3 class="m-0" id="total-clicks-desktop">0</h3>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 d-flex justify-content-center align-items-center">
+                                        <i class="fa fa-vcard-o text-blue" style="font-size: 50px;"></i>
+                                    </div>
+                                    <div class="col-8 d-flex justify-content-center align-items-center">
+                                        <div class="w-100">
+                                            <p class="text-muted m-0">Visitors</p>
+                                            <h3 class="m-0" id="unique-visitors-desktop">0</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <!-- content 1 -->
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-stack-overflow text-blue" style="font-size: 50px;"></i>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center align-items-center">
+                                            <div class="w-100">
+                                                <p class="text-muted m-0">Total Payments</p>
+                                                <h3 class="m-0" id="total-payments-desktop">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 d-flex justify-content-center align-items-center">
+                                            <i class="fa fa-money text-blue" style="font-size: 50px;"></i>
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center align-items-center">
+                                            <div class="w-100">
+                                                <p class="text-muted m-0">Redeemable Amount</p>
+                                                <h3 class="m-0"><span>&#8377; </span><span class="redeemable-amount"> 0</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-4 d-flex justify-content-center align-items-center">
+                                            <img src="icons/medal.svg" style="font-size:50px;width:50px;height:50px;">
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-center align-items-center">
+                                            <div class="w-100">
+                                                <p class="text-muted m-0">Level</p>
+                                                <h3 class="m-0 level">1</h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -257,412 +259,411 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- achievement -->
-        <div class="container-fluid bg-blue mt-4 d-none">
-            <h2 class="pt-3" style="display:flex;justify-content:center;color:#fff;">Achievement</h2>
-            <div class="row p-2">
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/1.png" style="width: 140px;">                                    
-                                </div>
-                                <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p id="reward" class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> 1 Free <br>Event</span> Ticket</p>
-                                        <button type="button" onclick="validate(1)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon1"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
-                </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/2.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p id="reward" class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;">&#8377; 500</span></p>
-                                        <button type="button" onclick="validate(2)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon2"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
-                </div> 
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/3.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:600;"> Finstreet Stationary </span></p>
-                                        <button type="button" onclick="validate(3)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon3"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
-                </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/4.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 p-0 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Personal Career Guidance with Mr.Bandhul Bansal </span></p>
-                                        <button type="button" onclick="validate(4)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon4"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
-                </div>          
-            </div>
-            <div class="row p-2">
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/5.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> Special Premium instreet Kit </span></p>
-                                        <button type="button" onclick="validate(5)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon5"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
-                </div> 
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/6.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 1500 </span></p>
-                                        <button type="button" onclick="validate(6)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon6"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
-                </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/7.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 p-0 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Paid Internship Opportunity with PPO </span></p>
-                                        <button type="button" onclick="validate(7)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon7"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
-                </div>
-                <div class="col-3 p-3">
-                    <div class="bg-white w-100 p-2" style="border-radius:15px;">
-                        <div class="container">
-                            <div class="row">
-                                <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                    <img src="icons/8.png" style="width: 140px;">                                   
-                                </div>
-                                <div class="col-12 d-flex justify-content-center align-items-center">
-                                    <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
-                                        <p class="text-muted m-0">New Achievement!</p>
-                                        <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Official Internship Cerificate</span></p>
-                                        <button type="button" onclick="validate(8)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="icon8"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
-                </div>            
-            </div>
-            <div class="container">
+            <!-- achievement -->
+            <div class="container-fluid bg-blue mt-4 d-none">
+                <h2 class="pt-3" style="display:flex;justify-content:center;color:#fff;">Achievement</h2>
                 <div class="row p-2">
-                    <div class="col-4 p-3">
+                    <div class="col-3 p-3">
                         <div class="bg-white w-100 p-2" style="border-radius:15px;">
                             <div class="container">
                                 <div class="row">
                                     <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                        <img src="icons/9.png" style="width: 140px;">                                   
+                                        <img src="icons/1.png" style="width: 140px;">                                    
                                     </div>
                                     <div class="col-12 d-flex justify-content-center align-items-center">
                                         <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
                                             <p class="text-muted m-0">New Achievement!</p>
-                                            <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> Bluetooth Speaker </span></p>
-                                            <button type="button" onclick="validate(9)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            <p id="reward" class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> 1 Free <br>Event</span> Ticket</p>
+                                            <button type="button" onclick="validate(1)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="icon9"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        <div class="icon1"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
                     </div>
-                    <div class="col-4 p-3">
+                    <div class="col-3 p-3">
                         <div class="bg-white w-100 p-2" style="border-radius:15px;">
                             <div class="container">
                                 <div class="row">
                                     <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                        <img src="icons/10.png" style="width: 140px;">                                   
+                                        <img src="icons/2.png" style="width: 140px;">                                   
                                     </div>
                                     <div class="col-12 d-flex justify-content-center align-items-center">
                                         <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
                                             <p class="text-muted m-0">New Achievement!</p>
-                                            <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 5000 </span></p>
-                                            <button type="button" onclick="validate(10)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            <p id="reward" class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;">&#8377; 500</span></p>
+                                            <button type="button" onclick="validate(2)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="icon10"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        <div class="icon2"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                    </div> 
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/3.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:600;"> Finstreet Stationary </span></p>
+                                            <button type="button" onclick="validate(3)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon3"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
                     </div>
-                    <div class="col-4 p-3">
+                    <div class="col-3 p-3">
                         <div class="bg-white w-100 p-2" style="border-radius:15px;">
                             <div class="container">
                                 <div class="row">
                                     <div class="align-items-center col-12 d-flex justify-content-center pt-4">
-                                        <img src="icons/11.png" style="width: 140px;">                                   
+                                        <img src="icons/4.png" style="width: 140px;">                                   
                                     </div>
-                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <div class="col-12 p-0 d-flex justify-content-center align-items-center">
                                         <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
                                             <p class="text-muted m-0">New Achievement!</p>
-                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> Investment Pitch Opportunity </span></p>
-                                            <button type="button" onclick="validate(11)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Personal Career Guidance with Mr.Bandhul Bansal </span></p>
+                                            <button type="button" onclick="validate(4)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="icon11"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        <div class="icon4"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                    </div>          
+                </div>
+                <div class="row p-2">
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/5.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> Special Premium instreet Kit </span></p>
+                                            <button type="button" onclick="validate(5)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon5"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div> 
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/6.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 1500 </span></p>
+                                            <button type="button" onclick="validate(6)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon6"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/7.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 p-0 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Paid Internship Opportunity with PPO </span></p>
+                                            <button type="button" onclick="validate(7)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon7"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                        <img src="icons/8.png" style="width: 140px;">                                   
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center align-items-center">
+                                        <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                            <p class="text-muted m-0">New Achievement!</p>
+                                            <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;">Official Internship Cerificate</span></p>
+                                            <button type="button" onclick="validate(8)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon8"  style="opacity:0.8;background-color:#000;height:380px;margin-top:-380px;border-radius:12px;"></div>
+                    </div>            
+                </div>
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                            <img src="icons/9.png" style="width: 140px;">                                   
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                                <p class="text-muted m-0">New Achievement!</p>
+                                                <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> Bluetooth Speaker </span></p>
+                                                <button type="button" onclick="validate(9)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon9"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                            <img src="icons/10.png" style="width: 140px;">                                   
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                                <p class="text-muted m-0">New Achievement!</p>
+                                                <p class="text-muted">You earned <br><span style="color:#b0a740;font-weight:bold;"> &#8377; 5000 </span></p>
+                                                <button type="button" onclick="validate(10)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon10"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        </div>
+                        <div class="col-4 p-3">
+                            <div class="bg-white w-100 p-2" style="border-radius:15px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="align-items-center col-12 d-flex justify-content-center pt-4">
+                                            <img src="icons/11.png" style="width: 140px;">                                   
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center">
+                                            <div class="mb-4 mt-3 w-100" style="text-align:center;font-size:18px;">
+                                                <p class="text-muted m-0">New Achievement!</p>
+                                                <p class="text-muted">You earned <span style="color:#b0a740;font-weight:bold;"> Investment Pitch Opportunity </span></p>
+                                                <button type="button" onclick="validate(11)" class="claim-button btn btn-primary w-100 font-weight-bold" style="font-size: 20px;">Claim Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="icon11"  style="opacity:0.8;background-color:#000;height:379px;margin-top:-379px;border-radius:12px;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- sales overview -->
+            <div class="container-fluid">
+                <div class="row p-2 mt-4">
+                    <div class="col-md-8 p-3">
+                        <div class="bg-white w-100">
+                            <h4 class="p-3">Sales Overview</h4>
+                            <div class="container-fluid" style="background-color: #3F51B5;">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex justify-content-center align-items-center" style="background-color: #283593;">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">Total</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="total-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">This Month</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="month-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">This Week</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="week-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">Yesterday</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="yesterday-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                                        <div style="text-align: center;" class="text-white py-2">
+                                            <p class="text-white m-0">Today</p>
+                                            <h3 class="m-0"><span>&#8377;</span><span id="today-desktop">0</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <div class="bg-white">
+                                    <h4 class="p-3 m-0">Referral Link</h4>
+                                    <hr class="mt-0">
+                                    <p class="text-muted px-3 m-0">Share this affiliate link within your circle to avail benefits.</p>
+                                    <div  class="w-100">
+                                        <a  id="referral-link-desktop" href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- <div class="col-6">
+                                <div class="bg-white">
+                                    <h4 class="p-3 m-0">Creative link</h4>
+                                    
+                                    <hr class="mt-0">
+                                    <p class="text-muted px-3 m-0">If you need creative to popularize in your circle use the link below</p>
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                        <a href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- Payment Overview -->
+                    <div class="col-md-4 p-3">
+                        <div class="bg-white w-100">
+                            <h4 class="p-3">Payment Overview</h4>
+                            <hr>
+                            <div class="container">
+                                <p class="p-3" id="no-payments-desktop">No payments to display</p>
+                                <div id="orders-desktop"></div>
+                                <!-- <div class="row">
+                                    <div class="col-8 pl-5">
+                                        Sachin
+                                    </div>
+                                    <div class="col-4 pr-5 text-right">
+                                        <span>&#8377;</span>500
+                                    </div>
+                                </div>
+                                <hr> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <!-- sales overview -->
-        <div class="container-fluid">
-            <div class="row p-2 mt-4">
-                <div class="col-md-8 p-3">
-                    <div class="bg-white w-100">
-                        <h4 class="p-3">Sales Overview</h4>
-                        <div class="container-fluid" style="background-color: #3F51B5;">
-                            <div class="row">
-                                <div class="col-md-3 d-flex justify-content-center align-items-center" style="background-color: #283593;">
-                                    <div style="text-align: center;" class="text-white py-2">
-                                        <p class="text-white m-0">Total</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="total-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <div style="text-align: center;" class="text-white py-2">
-                                        <p class="text-white m-0">This Month</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="month-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <div style="text-align: center;" class="text-white py-2">
-                                        <p class="text-white m-0">This Week</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="week-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 d-flex justify-content-center align-items-center">
-                                    <div style="text-align: center;" class="text-white py-2">
-                                        <p class="text-white m-0">Yesterday</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="yesterday-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 d-flex justify-content-center align-items-center">
-                                    <div style="text-align: center;" class="text-white py-2">
-                                        <p class="text-white m-0">Today</p>
-                                        <h3 class="m-0"><span>&#8377;</span><span id="today-desktop">0</span></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Redeem Amount</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-12">
-                            <div class="bg-white">
-                                <h4 class="p-3 m-0">Referral Link</h4>
-                                <hr class="mt-0">
-                                <p class="text-muted px-3 m-0">Share this affiliate link within your circle to avail benefits.</p>
-                                <div  class="w-100">
-                                    <a  id="referral-link-desktop" href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
+                        <div class="modal-body">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                                        aria-controls="nav-home" aria-selected="true"><img src="images/gpay.png" style="width: 50px;"></a>
+                                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false"><img src="images/phonepay.png" style="width: 80px;"></a>
+                                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                                        aria-controls="nav-contact" aria-selected="false"><img src="images/Paytm_logo.png" style="width: 80px;"></a>
+                                    <a class="nav-item nav-link" id="nav-account-tab" data-toggle="tab" href="#nav-account" role="tab"
+                                    aria-controls="nav-account" aria-selected="false">Account</a>
                                 </div>
-                                
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active p-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <div id="gpay-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit GPay Number</h4>
+                                        <input type="number" id="gpay-number" name="gpay-number" class="form-control mb-3 text-center" >
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="gpay-submit">Submit</button>
+                                        </div>
+                                    </div>
+
+                                    <div id="gpay-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="tab-pane fade p-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div id="phonepay-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit Phonepay Number</h4>
+                                        <input type="number" id="phonepay-number" name="phonepay-number" class="form-control mb-3 text-center" >
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="phonepay-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="phonepay-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade p-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                    <div id="paytm-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit Paytm Number</h4>
+                                        <input type="number" id="paytm-number" name="paytm-number" class="form-control mb-3 text-center" >
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="paytm-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="paytm-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade p-4" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab">
+                                    <div id="account-container">
+                                        <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
+                                        <h4 class="w-100 text-center text-muted mb-3"> Enter Your Account Details</h4>
+                                        <input type="text" id="account-name" name="account-name" class="form-control mb-3 text-center" placeholder="Name On Account">
+                                        <input type="number" id="account-number" name="account-number" class="form-control mb-3 text-center" placeholder="Account Number">
+                                        <input type="text" id="account-ifsc" name="account-ifsc" class="form-control mb-3 text-center" placeholder="IFSC Code">
+                                        <div class="w-100 d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-primary" id="account-submit">Submit</button>
+                                        </div>
+                                    </div>
+                                    <div id="account-success" style="display: none;">
+                                        <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="col-6">
-                            <div class="bg-white">
-                                <h4 class="p-3 m-0">Creative link</h4>
-                                
-                                <hr class="mt-0">
-                                <p class="text-muted px-3 m-0">If you need creative to popularize in your circle use the link below</p>
-                                <div class="w-100 d-flex justify-content-center align-items-center">
-                                    <a href="https://material.io/design/color/#tools-for-picking-colors" class="mx-3 mb-3">https://material.io/design/color/#tools-for-picking-colors</a>
-                                </div>
-                            </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Submit</button>
                         </div> -->
                     </div>
                 </div>
-                <!-- Payment Overview -->
-                <div class="col-md-4 p-3">
-                    <div class="bg-white w-100">
-                        <h4 class="p-3">Payment Overview</h4>
-                        <hr>
-                        <div class="container">
-                            <p class="p-3" id="no-payments-desktop">No payments to display</p>
-                            <div id="orders-desktop"></div>
-                            <!-- <div class="row">
-                                <div class="col-8 pl-5">
-                                    Sachin
-                                </div>
-                                <div class="col-4 pr-5 text-right">
-                                    <span>&#8377;</span>500
-                                </div>
-                            </div>
-                            <hr> -->
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Redeem Amount</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                                    aria-controls="nav-home" aria-selected="true"><img src="images/gpay.png" style="width: 50px;"></a>
-                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                                    aria-controls="nav-profile" aria-selected="false"><img src="images/phonepay.png" style="width: 80px;"></a>
-                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                                    aria-controls="nav-contact" aria-selected="false"><img src="images/Paytm_logo.png" style="width: 80px;"></a>
-                                <a class="nav-item nav-link" id="nav-account-tab" data-toggle="tab" href="#nav-account" role="tab"
-                                aria-controls="nav-account" aria-selected="false">Account</a>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active p-4" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                <div id="gpay-container">
-                                    <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
-                                    <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit GPay Number</h4>
-                                    <input type="number" id="gpay-number" name="gpay-number" class="form-control mb-3 text-center" >
-                                    <div class="w-100 d-flex justify-content-center align-items-center">
-                                        <button type="button" class="btn btn-primary" id="gpay-submit">Submit</button>
-                                    </div>
-                                </div>
-
-                                <div id="gpay-success" style="display: none;">
-                                    <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
-                                </div>
-                                
-                                
-                            </div>
-                            <div class="tab-pane fade p-4" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <div id="phonepay-container">
-                                    <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
-                                    <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit Phonepay Number</h4>
-                                    <input type="number" id="phonepay-number" name="phonepay-number" class="form-control mb-3 text-center" >
-                                    <div class="w-100 d-flex justify-content-center align-items-center">
-                                        <button type="button" class="btn btn-primary" id="phonepay-submit">Submit</button>
-                                    </div>
-                                </div>
-                                <div id="phonepay-success" style="display: none;">
-                                    <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade p-4" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                <div id="paytm-container">
-                                    <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
-                                    <h4 class="w-100 text-center text-muted mb-3"> Enter Your 10 digit Paytm Number</h4>
-                                    <input type="number" id="paytm-number" name="paytm-number" class="form-control mb-3 text-center" >
-                                    <div class="w-100 d-flex justify-content-center align-items-center">
-                                        <button type="button" class="btn btn-primary" id="paytm-submit">Submit</button>
-                                    </div>
-                                </div>
-                                <div id="paytm-success" style="display: none;">
-                                    <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade p-4" id="nav-account" role="tabpanel" aria-labelledby="nav-account-tab">
-                                <div id="account-container">
-                                    <p class="w-100 text-center text-muted mb-3">Your Redeemable Amount is &#8377;<span class="redeemable-amount" style="font-weight: bold;">0</span></p>
-                                    <h4 class="w-100 text-center text-muted mb-3"> Enter Your Account Details</h4>
-                                    <input type="text" id="account-name" name="account-name" class="form-control mb-3 text-center" placeholder="Name On Account">
-                                    <input type="number" id="account-number" name="account-number" class="form-control mb-3 text-center" placeholder="Account Number">
-                                    <input type="text" id="account-ifsc" name="account-ifsc" class="form-control mb-3 text-center" placeholder="IFSC Code">
-                                    <div class="w-100 d-flex justify-content-center align-items-center">
-                                        <button type="button" class="btn btn-primary" id="account-submit">Submit</button>
-                                    </div>
-                                </div>
-                                <div id="account-success" style="display: none;">
-                                    <h4 class="w-100 text-center text-muted mb-3" >Thankyou, Your request is submitted successfully. The amount will be transferred to your account within 24 hours.</h4>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        
     </div>
 
     <div class="d-lg-none">
