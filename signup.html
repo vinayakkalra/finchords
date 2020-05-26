@@ -25,9 +25,27 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/cropped-Fin-270x270.jpg">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <script src="https://use.fontawesome.com/ebc80d226d.js"></script>
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> -->
     <style type="text/css">
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-clip: border-box;
+            border-radius: .25rem;
+            background-color:#2f3549;
+            border: 0px #2f3549;
+        }
         .divider-text {
             position: relative;
             text-align: center;
@@ -91,11 +109,11 @@
     
     <div class="d-none d-lg-block">
         <!-- Navigation -->
-        <div class="fixed-top" style="padding:20px 0px;background-color:#00abc9;outline:none;">
+        <div style="padding:20px 0px;outline:none;background-color:#17191f;">
             <nav class="navbar navbar-expand-lg navbar-dark static-top">
                 <div class="container">
                     <a class="navbar-brand" href="/">
-                        <img src="images/logo.png" alt="" width="133" height="50">
+                        <img src="images/Finstreet logo@2x.png" alt="" width="100" height="44">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,187 +144,240 @@
         </div>
 
         <!-- Page Content -->
-        <div class="container mb-5" style="margin-top: 150px;">
-        
-            <div class="card bg-light">
-                <article class="card-body mx-auto">
-                    <h4 class="card-title mt-3 text-center">Create Affiliate Account</h4>
-                    <p class="text-center mb-3">Get started with your free account</p>
-                    <!-- <p>
-                        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
-                            facebook</a>
-                    </p>
-                    <p class="divider-text">
-                        <span class="bg-light">OR</span>
-                    </p> -->
-                    <form>
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                            </div>
-                            <input name="name" id="name" class="form-control" placeholder="Full name" type="text">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                            </div>
-                            <input name="email" id="email" class="form-control" placeholder="Email address" type="email">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                            </div>
-                            <select class="custom-select" style="max-width: 80px;">
-                                <option selected="">+91</option>
-                            </select>
-                            <input name="phone" id="phone" class="form-control" placeholder="Phone number" type="number">
-                        </div> <!-- form-group// -->
-                        <!-- <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                            </div>
-                            <select class="form-control">
-                                <option selected=""> Select job type</option>
-                                <option>Designer</option>
-                                <option>Manager</option>
-                                <option>Accaunting</option>
-                            </select>
-                        </div> form-group end.// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                            </div>
-                            <input class="form-control" id="password" placeholder="Create password" type="password">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                            </div>
-                            <input class="form-control" id="confirm_password" placeholder="Confirm password" type="password">
-                        </div> <!-- form-group// -->
-                        <div class="form-group">
-                            <button type="submit" id="signup" class="btn btn-primary btn-block"> Create Account </button>
-                        </div> <!-- form-group// -->
-                        <p class="text-center">Have an account? <a href="login">Log In</a> </p>
-                    </form>
-                </article>
-            </div> <!-- card.// -->
-        
+        <div class="container-fluid" style="background-color:#242838;">
+            <div class="container" style="background-color:#2F3549;padding:20px 0px;">       
+                <div class="card color-white">
+                    <article class="card-body mx-auto">
+                        <h4 class="card-title mt-3 text-center">Create Affiliate Account</h4>
+                        <p class="text-center mb-3">Get started with your free account</p>
+                        <!-- <p>
+                            <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                            <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
+                                facebook</a>
+                        </p>
+                        <p class="divider-text">
+                            <span class="bg-light">OR</span>
+                        </p> -->
+                        <form>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                </div>
+                                <input name="name" id="name" class="form-control" placeholder="Full name" type="text">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                </div>
+                                <input name="email" id="email" class="form-control" placeholder="Email address" type="email">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                                </div>
+                                <select class="custom-select" style="max-width: 80px;">
+                                    <option selected="">+91</option>
+                                </select>
+                                <input name="phone" id="phone" class="form-control" placeholder="Phone number" type="number">
+                            </div> <!-- form-group// -->
+                            <!-- <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                                </div>
+                                <select class="form-control">
+                                    <option selected=""> Select job type</option>
+                                    <option>Designer</option>
+                                    <option>Manager</option>
+                                    <option>Accaunting</option>
+                                </select>
+                            </div> form-group end.// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                </div>
+                                <input class="form-control" id="password" placeholder="Create password" type="password">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                </div>
+                                <input class="form-control" id="confirm_password" placeholder="Confirm password" type="password">
+                            </div> <!-- form-group// -->
+                            <div class="form-group">
+                                <button type="submit" id="signup" class="btn btn-danger btn-block"> Create Account </button>
+                            </div> <!-- form-group// -->
+                            <p class="text-center">Have an account? <a href="login">Log In</a> </p>
+                        </form>
+                    </article>
+                </div> <!-- card.// -->            
+            </div>
+            <!--container end.//-->
         </div>
-        <!--container end.//-->
+        <!-- footer -->
+        <div class="container-fluid p-0 font-montserrat-m color-white" style="background-color:#242838;">
+            <div class="container-fluid p-3 text-center" style="background-color:#FF4747;">
+                <h5 class="mb-0">Have a Question for us? Contact Our 24X7 Customer Support.</h5>
+            </div>
+            <div class="d-flex justify-content-center p-4">
+                <div>
+                    <img src="images/Support.svg" alt="">
+                </div>
+                <div class="pl-3 font-montserrat-m pt-4">
+                    <p>support@finstreet.in</p>
+                    <p>+91-8968232722</p>
+                </div>
+            </div>
+        </div>     
+        <div class="container-fluid text-center font-montserrat-m " style="background-color:#434D6E;">
+            <div class="p-3">
+                <h5 class="color-white">Copyright © 2019 All Right Reserved. Designed By <a href="">QuadBTech</a></h5>
+            </div>            
+        </div>  
     </div>
+
+    <!-- mobile view -->
     <div class="d-lg-none">
-        <!-- Navigation -->
-        <div class="fixed-top" style="padding:80px 0px;background-color:#00abc9;outline:none;">
+        <!-- header -->
+        <div class="fixed-top" style="padding: 50px 0px;background-image:url(images/background-pic.png);outline:none;">
             <header>
-                <div class="position-fixed h-100 w-100" style="opacity:1;backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);z-index:16;display:none;top:0px" id="drawer">
+                <div class="position-fixed h-100 w-100"
+                    style="opacity: 1; backdrop-filter: blur(8px); z-index: 16; display: none; top: 0px;" id="drawer">
                     <div class="container h-100 w-100 pr-0">
                         <div class="row h-100 w-100 mr-0 position-absolute">
-                            <div class="col-2 d-flex justify-content-end pt-5 pl-0" id="cross" style="padding-right:20px !important;">
+                            <div class="col-2 d-flex justify-content-end pt-5 pl-0" id="cross"
+                                style="padding-right: 15px !important;">
                                 <div id="mobile-cross">
-                                    <p class="m-0" style="font-size:50px;color:#fff;">X</p>
+                                    <p class="m-0" style="font-size: 30px;color:#fff;">X</p>
                                 </div>
                             </div>
-                            <div class="col-10 position-relative" style="background: #00abc9 0% 0% no-repeat padding-box;">
-                                <div class="position-absolute w-100" style="top:10%;">
-                                    <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#231c62;" onclick="window.location = '/'">Home</p>
-                                    <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#fff;" onclick="window.location = 'affiliate'">Affiliate</p>
-                                    <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#fff;" onclick="window.location = 'signup'">Signup</p>
-                                    <p class="footer-text font-weight-light text-center" style="font-size:50px;margin-bottom:10px; font-family: europhonic;color:#fff;" onclick="window.location = 'login'">Login</p>
+                            <div class="col-10 position-relative"
+                                style="background: #0505055c 0% 0% no-repeat padding-box;">
+                                <div class="position-absolute w-100" style="top:35%;">
+                                    <p class="footer-text font-weight-light text-center"
+                                    style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;" onclick="window.location = '/'">Home</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                    style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;" onclick="window.location = 'affiliate'">Affiliate</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                    style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;" onclick="window.location = 'signup'">Signup</p>
+                                    <p class="footer-text font-weight-light text-center"
+                                    style="font-size: 30px;margin-bottom: 5px;font-family: europhonic;color:#fff;" onclick="window.location = 'login'">Login</p>
                                 </div>                          
                             </div>                        
                         </div>                
                     </div>                
                 </div>        
                 <div class="nav-container">
-                    <div id="mobile-navbar"></div>
-                    <div style="position: fixed; z-index: 10; right:70px; margin-top:-38px; z-index:15 !important;" id="open-drawer">
-                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;">
-                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 15px;margin-bottom: 0px;border-radius: 100px;">
-                        <hr style="width: 50px;height: 4px;background-color: white;margin-top: 15px;margin-bottom: 0px;border-radius: 100px;">
-                    </div>
-                    <div class="d-flex position-fixed align-items-center w-100" style="z-index: 10; margin-top:-45px; margin-left:32px;">
-                        <a class="navbar-brand header-text" id="mobile-header-logo-text" href="/">
-                            <img class="logo-header" src="images/logo.png" alt="" style="width:250px;">
-                        </a>
+                    <div id="mobile-navbar">
+                        <div style="position: fixed;right: 20px;margin-top: -26px;z-index:15 !important;" id="open-drawer">
+                            <hr style="width: 40px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;">
+                            <hr style="width: 30px;height: 4px;background-color: white;margin-top: 10px;margin-bottom: 0px;border-radius: 100px;margin-left: 9px;">                            
+                        </div>
+                        <div class="d-flex position-fixed align-items-center w-100"
+                            style="z-index: 10;margin-top: -30px;margin-left: 15px;">
+                            <a class="navbar-brand header-text" id="mobile-header-logo-text" href="/">
+                                <img class="logo-header" src="images/Finstreet logo@2x.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>            
             </header>
         </div>
 
         <!-- Page Content -->
-        <div class="container mb-5" style="margin-top: 250px;">
-        
-            <div class="card bg-light">
-                <article class="card-body mx-2">
-                    <h4 class="card-title mt-3 text-center" style="font-size:3rem;">Create Affiliate Account</h4>
-                    <p class="text-center mb-3" style="font-size:2rem;">Get started with your free account</p>
-                    <!-- <p>
-                        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
-                            facebook</a>
-                    </p>
-                    <p class="divider-text">
-                        <span class="bg-light">OR</span>
-                    </p> -->
-                    <form>
-                        <div class="form-group input-group pb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" style="padding-left: 25px; padding-right: 25px;"> <i class="fa fa-user" style="font-size:2rem;"></i> </span>
-                            </div>
-                            <input name="name" id="name-mobile" class="form-control" placeholder="Full name" type="text" style="font-size:2rem;">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group pb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" style="padding-left: 25px; padding-right: 25px;"> <i class="fa fa-envelope" style="font-size:2rem;"></i> </span>
-                            </div>
-                            <input name="email" id="email-mobile" class="form-control" placeholder="Email address" type="email" style="font-size:2rem;">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group pb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" style="padding-left: 25px; padding-right: 25px;"> <i class="fa fa-phone" style="font-size:2rem;"></i> </span>
-                            </div>
-                            <select class="custom-select" style="max-width: 120px; font-size:2rem;">
-                                <option selected="" >+91</option>
-                            </select>
-                            <input name="phone" id="phone-mobile" class="form-control" placeholder="Phone number" type="number" style="font-size:2rem;">
-                        </div> <!-- form-group// -->
-                        <!-- <div class="form-group input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-                            </div>
-                            <select class="form-control">
-                                <option selected=""> Select job type</option>
-                                <option>Designer</option>
-                                <option>Manager</option>
-                                <option>Accaunting</option>
-                            </select>
-                        </div> form-group end.// -->
-                        <div class="form-group input-group pb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" style="padding-left: 25px; padding-right: 25px;"> <i class="fa fa-lock" style="font-size:2rem;"></i> </span>
-                            </div>
-                            <input class="form-control" id="password-mobile" placeholder="Create password" type="password" style="font-size:2rem;">
-                        </div> <!-- form-group// -->
-                        <div class="form-group input-group pb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" style="padding-left: 25px; padding-right: 25px;"> <i class="fa fa-lock" style="font-size:2rem;"></i> </span>
-                            </div>
-                            <input class="form-control" id="confirm_password-mobile" placeholder="Confirm password" type="password" style="font-size:2rem;">
-                        </div> <!-- form-group// -->
-                        <div class="form-group">
-                            <button type="submit" id="signup-mobile" class="btn btn-primary btn-block" style="font-size :2.5rem;"> Create Account </button>
-                        </div> <!-- form-group// -->
-                        <p class="text-center" style="font-size:2rem;">Have an account? <a href="login">Log In</a> </p>
-                    </form>
-                </article>
-            </div> <!-- card.// -->
-        
+        <div class="container-fluid" style="background-color:#2F3549;">
+            <div class="container" style="margin-top:100px;">        
+                <div class="card color-white">
+                    <article class="card-body">
+                        <h4 class="card-title mt-3 text-center" style="font-size:28px;">Create Affiliate Account</h4>
+                        <p class="text-center mb-3" style="font-size:18px;">Get started with your free account</p>
+                        <!-- <p>
+                            <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                            <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
+                                facebook</a>
+                        </p>
+                        <p class="divider-text">
+                            <span class="bg-light">OR</span>
+                        </p> -->
+                        <form>
+                            <div class="form-group input-group pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" style="padding-left: 18px;padding-right: 18px;"> <i class="fa fa-user" style="font-size: 18px;"></i> </span>
+                                </div>
+                                <input name="name" id="name-mobile" class="form-control" placeholder="Full name" type="text" style="font-size: 25px;">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" style="padding-left: 18px;padding-right: 18px;"> <i class="fa fa-envelope" style="font-size: 18px;"></i> </span>
+                                </div>
+                                <input name="email" id="email-mobile" class="form-control" placeholder="Email address" type="text" style="font-size: 25px;">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" style="padding-left:20px;padding-right:20px;"> <i class="fa fa-phone" style="font-size: 18px;"></i> </span>
+                                </div>
+                                <select class="custom-select" style="max-width:80px;font-size: 25px;border: 0px;">
+                                    <option selected="">+91</option>
+                                </select>
+                                <input name="phone" id="phone-mobile" class="form-control" placeholder="Phone number" type="number" style="font-size:25px;border: 0;">
+                            </div> <!-- form-group// -->
+                            <!-- <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                                </div>
+                                <select class="form-control">
+                                    <option selected=""> Select job type</option>
+                                    <option>Designer</option>
+                                    <option>Manager</option>
+                                    <option>Accaunting</option>
+                                </select>
+                            </div> form-group end.// -->
+                            <div class="form-group input-group pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" style="padding-left:20px;padding-right: 20px;"> <i class="fa fa-lock" style="font-size:18px;"></i> </span>
+                                </div>
+                                <input class="form-control" id="password-mobile" placeholder="Create password" type="password" style="font-size: 25px;">
+                            </div> <!-- form-group// -->
+                            <div class="form-group input-group pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" style="padding-left:20px;padding-right: 20px;"> <i class="fa fa-lock" style="font-size:18px;"></i> </span>
+                                </div>
+                                <input class="form-control" id="confirm_password-mobile" placeholder="Confirm password" type="password" style="font-size: 25px;">
+                            </div> <!-- form-group// -->
+                            <div class="form-group">
+                                <button type="submit" id="signup-mobile" class="btn btn-danger btn-block" style="font-size :25px"> Create Account </button>
+                            </div> <!-- form-group// -->
+                            <p class="text-center" style="font-size:25px;">Have an account? <a href="login">Log In</a> </p>
+                        </form>
+                    </article>
+                </div> <!-- card.// -->            
+            </div>
+            <!--container end.//-->
         </div>
-        <!--container end.//-->
-    </div>
-    
+        <!-- footer -->
+        <div class="container-fluid" style="background-color:#FF4747;margin-top:-1px;">
+            <div class="color-white">
+                <h5 style="text-align:center;padding:15px 0;" class="mb-0">Have a Question for us? Contact Our 24X7 Customer Support.</h5>
+            </div>
+        </div>
+        <!--  -->
+        <div class="container-fluid" style="background-color:#2F3549;margin-top:-1px;">
+            <div class="d-flex justify-content-center p-4">
+                <div>
+                    <img src="images/Support.svg" width="62" alt="">
+                </div>
+                <div class="color-white font-montserrat-m pl-3" style="font-size:16px;">
+                    <p>support@finstreet.in</p>
+                    <p>+91-8968232722</p>
+                </div>
+            </div> 
+        </div>
+        <!--  -->
+        <div class="container-fluid text-center font-montserrat-m " style="background-color:#434D6E;">
+            <div class="p-3">
+                <h5 style="font-size:11px;" class="color-white">Copyright © 2019 All Right Reserved. Designed By <a href="">QuadBTech</a></h5>
+            </div>            
+        </div>  
+    </div>    
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
