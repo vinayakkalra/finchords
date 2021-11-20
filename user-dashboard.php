@@ -112,13 +112,13 @@ if(isset($_SESSION['useremail'])){
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150643411-2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ENTER_YOUR_ANALYTICS_ID"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-150643411-2');
+    gtag('config', 'ENTER_YOUR_ANALYTICS_ID');
     </script>
 
     <!-- Google Tag Manager -->
@@ -126,7 +126,7 @@ if(isset($_SESSION['useremail'])){
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PFRW8HP');</script>
+        })(window,document,'script','dataLayer','ENTER_YOUR_TAG_ID');</script>
         <!-- End Google Tag Manager -->
 
     <title>User Dashboard | Finstreet | India's 1st ever Financial Freedom Coach</title>
@@ -159,7 +159,7 @@ if(isset($_SESSION['useremail'])){
 <body style="background-color: #00ABC9;">
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRW8HP"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=ENTER_YOUR_TAG_ID"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
